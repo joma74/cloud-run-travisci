@@ -13,7 +13,6 @@ before_install:
 - gcloud auth activate-service-account --key-file=google-key.json # login, for service accounts
 - gcloud auth configure-docker    # login to gcr, to enable "docker push"
 - gcloud config set project "${GCP_PROJECT_ID}"
-- gcloud components install
 install: true # no-op
 script:
 - |
